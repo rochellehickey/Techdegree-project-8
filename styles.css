@@ -5,7 +5,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: #edeff0;
+  background: repeat #edeff0 url("svgs/background.svg");
 }
 
 #container {
@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-  color: #111;
+  color: #da8058;
 }
 
 header {
@@ -60,3 +60,86 @@ footer {
   padding-bottom: 30px;
   color: #ba8058;
 }
+
+/* ----------- */
+/* --- NAV --- */
+/* ----------- */
+
+.menu a,
+svg .home-icon,
+svg .location-icon,
+svg .contact-icon {
+  transition: all .5s;
+}
+
+.menu a:hover,
+svg .home-icon:hover,
+svg .location-icon:hover,
+svg .contact-icon:hover {
+  fill: #da8058;
+}
+
+.home-icon,
+.location-icon,
+.contact-icon {
+  transform: translateY(10px) scale(0.6);
+  fill: #39add1;
+}
+
+/* ------------------ */
+/* ---- MAIN LOGO --- */
+/* ------------------ */
+
+#main-logo {
+  width: 140px;
+  height: 120px;
+  transition: transform .5s cubic-bezier(.68,-0.7,.44,1.71);
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+#main-logo:hover {
+  transform: rotate(-25deg) scale(1.1);
+}
+
+.logo-circle {
+  fill:#ba8058;
+}
+
+.logo-text {
+  fill:#eaaa7f;
+}
+
+.logo-paw {
+  fill:#f4c6a6;
+}
+
+/* --------------- */
+/* --- CORGIES --- */
+/* --------------- */
+
+.body {
+  fill: #52595f;
+}
+
+.nose_and_eyes {
+  fill: #2d3339;
+}
+
+.brows {
+  fill: #da8058;
+}
+
+.white {
+  fill: #fbfeff;
+}
+
+
+
+
+
+
+
+
+
+
