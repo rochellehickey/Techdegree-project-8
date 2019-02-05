@@ -66,17 +66,10 @@ footer {
 /* ----------- */
 
 .menu a,
-svg .home-icon,
-svg .location-icon,
-svg .contact-icon {
+.home-icon,
+.location-icon,
+.contact-icon {
   transition: all .5s;
-}
-
-.menu a:hover,
-svg .home-icon:hover,
-svg .location-icon:hover,
-svg .contact-icon:hover {
-  fill: #da8058;
 }
 
 .home-icon,
@@ -84,6 +77,12 @@ svg .contact-icon:hover {
 .contact-icon {
   transform: translateY(10px) scale(0.6);
   fill: #39add1;
+}
+
+.menu a:hover .home-icon,
+.menu a:hover .location-icon,
+.menu a:hover .contact-icon {
+  fill: #da8058;
 }
 
 /* ------------------ */
@@ -103,15 +102,15 @@ svg .contact-icon:hover {
 }
 
 .logo-circle {
-  fill:#ba8058;
+  fill: #ba8058;
 }
 
 .logo-text {
-  fill:#eaaa7f;
+  fill: #eaaa7f;
 }
 
 .logo-paw {
-  fill:#f4c6a6;
+  fill: #f4c6a6;
 }
 
 /* --------------- */
@@ -132,6 +131,22 @@ svg .contact-icon:hover {
 
 .white {
   fill: #fbfeff;
+}
+
+.corgi-sable .body {
+
+}
+
+.corgi-fawn .body {
+  fill: #f4c6a6;
+}
+
+.corgi-red .body {
+
+}
+
+.corgi-stone .body {
+
 }
 
 
