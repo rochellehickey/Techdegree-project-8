@@ -50,6 +50,12 @@ main {
   padding-top: 50px;
 }
 
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
 main h2 {
   font-size: 28px;
 }
@@ -116,6 +122,10 @@ footer {
   fill: #f4c6a6;
 }
 
+.logo-text-group {
+  display: none;
+}
+
 /* --------------- */
 /* --- CORGIES --- */
 /* --------------- */
@@ -168,6 +178,18 @@ use.corgi-stone {
   fill: #da8058;
 }
 
+/* --------------------- */
+/* --- MEDIA QUERIES --- */
+/* --------------------- */
+
+@media all and (min-width: 425px) {
+  h1 {
+    display: none;
+  }
+  .logo-text-group {
+    display: block;
+  }
+}
 
 
 
