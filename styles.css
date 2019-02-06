@@ -69,13 +69,15 @@ footer {
 .home-icon,
 .location-icon,
 .contact-icon {
-  transition: all .5s;
+  transition: all .5s cubic-bezier(.68,-0.7,.44,1.71);
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
 }
 
 .home-icon,
 .location-icon,
 .contact-icon {
-  transform: translateY(10px) scale(0.6);
+  transform:  scale(0.6);
   fill: #39add1;
 }
 
@@ -83,6 +85,7 @@ footer {
 .menu a:hover .location-icon,
 .menu a:hover .contact-icon {
   fill: #da8058;
+  transform: rotate(-15deg) scale(0.8);
 }
 
 /* ------------------ */
@@ -133,23 +136,35 @@ footer {
   fill: #fbfeff;
 }
 
-.corgi-sable .body {
-
+.corgi-coats {
+  max-width: 170px;
+  height: 170px;
 }
 
-.corgi-fawn .body {
+use.corgi-sable .body {
+  fill: #ba8058;
+}
+
+use.corgi-fawn .body {
   fill: #f4c6a6;
 }
 
-.corgi-red .body {
-
+use.corgi-red .body {
+  fill: #90491e;
 }
 
-.corgi-stone .body {
-
+use.corgi-stone .body {
+  fill: #52595f;
 }
 
+svg path {
+  fill: inherit;
+}
 
+.corgi-text {
+  font: bold 18px serif;
+  fill: #f4c6a6;
+}
 
 
 
