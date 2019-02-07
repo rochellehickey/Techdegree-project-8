@@ -94,6 +94,11 @@ footer {
   transform: rotate(-15deg) scale(0.8);
 }
 
+.main-nav svg {
+  position: relative;
+  top: 5px;
+}
+
 /* ------------------ */
 /* ---- MAIN LOGO --- */
 /* ------------------ */
